@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>DOODLE JUMP</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <META HTTP-EQUIV='Content-Security-Policy' CONTENT="default-src 'self';script-src 'self' 'unsafe-inline' *.disqus.com a.disquscdn.com requirejs.org www.google-analytics.com; style-src 'self' 'unsafe-inline' a.disquscdn.com; img-src 'self' *; media-src 'self' ; frame-src disqus.com;">
+    
+    <link rel='stylesheet' type='text/css' media='screen' href='css/layout.css'>
+    <link rel="icon" type="image/png" href="images/icon.png">
+</head>
+<body>
+    <div id='body-container'>
+        <div id='pausePlay'>
+            <img src='images/pause.png'>            
+        </div>
+        <div id='playagain'>
+            <img src='images/play-again-on.png'>
+        </div>
+        <canvas id='body-canvas'>
+
+        </canvas> 
+
+        
+    </div>
+    <div id='startpage'>
+            <img src='images/startPage.png'>
+            <div id='startplay'>
+                <img src='images/play-on.png'>
+            </div>
+
+            <div id='pcinstruction'>
+                <span>INSTRUCTIONS</span>
+                <span> LeftMove- 'A'</span>
+                <span> RightMove- 'D'</span>
+                <span> Shoot- 'Space'</span>
+            </div>
+            <div id='mobileinstruction'>
+                    <span> INSTRUCTIONS</span>
+                    <span> <-- 'Left Tilt'</span>
+                    <span> --> 'Right Tilt'</span>
+                    <span> Tap- 'Shoot'</span>
+                </div>
+    </div>
+    <div id='pause-container'>
+        <img src='images/pause-cover.png' alt='Pause Page'>
+        <div id='resume'>
+               <img src='images/resume.png'>
+        </div>
+    </div>
+    
+
+     
+    <script src='doodle.js'></script>
+    <script src='platform.js'></script>
+    <script src='obstacle.js'></script>
+    <script src='booster.js'></script>
+    <script src='bullet.js'></script>
+    <script src='script.js'></script>
+</body>
+</html>
