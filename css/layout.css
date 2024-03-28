@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Doodle";
+    src: url("DoodleJump.ttf");
+}
+
+body {
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Doodle', sans-serif;
+    background-color: rgb(17, 121, 69);
+}
+
+#body-container {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+
+#pausePlay
+{
+    position:absolute;
+    top:10px;
+    left:90.5%;
+    height:30px;
+    width:30px;
+    text-align:center;
+    display:none;
+    color:black;
+}
+#pausePlay img{
+    width:100%;
+    height:100%;
+}
+
+#pause-container{
+    position:relative;
+    width:100%;
+    height:100%;
+    
+    display:none;
+}
+
+#startpage{
+    position:relative;
+    width:100%;
+    height:100%;
+
+    display:none;
+}
+
+#startpage img{
+    
+    display:block;
+}
+
+#startplay{
+    position:absolute;
+    top:70%;
+    left:9%;
+}
+
+#pause-container img{
+    
+    display:block;
+}
+
+
+#playagain{
+    position:absolute;
+    top:75%;
+    left:37%;
+    width:150px;
+    height: 1px;
+    display:none;
+
+}
+
+#playagain img{
+    
+    width:100%;
+}
+
+#pcinstruction{
+    display:none;
+    color: rgb(243, 243, 206);
+    font-weight: bold;
+}
+
+#resume{
+    position:absolute;
+    width:30%;
+    top:70%;
+    left:40%;
+}
+
+#mobileinstruction{
+    position:absolute;
+    top:50%;
+    left:10%;
+    font-family:'Doodle';
+    font-size:15px;
+    display:none;
+
+}
+
+
+#mobileinstruction span{
+    margin-top:3px;
+    display:block;
+}
+
+
+#resume img{
+    width:100%;
+}
+
+.far.fa-play-circle
+{
+    font-size:90px;
+    color:black;
+}
+
+.far.fa-pause-circle
+{
+    
+    color:teal;
+    padding-left:20px;
+}
+
+
+@media screen and (min-width:500px)
+{
+
+#pcinstruction{
+    position:absolute;
+    top:65%;
+    left:55%;
+    font-family:'Doodle';
+    font-size:40px;
+    display:none;
+
+}
+
+#pcinstruction span{
+    margin-top:3px;
+    display:block;
+}
+
+#body-canvas
+{
+    width:500px;
+    height:100%;
+}
+    
+#body-container{
+   
+    width:500px;
+    height:100%;
+   
+}
+#startpage{
+    width:500px;
+    height:100%;
+}   
+
+#pause-container{
+    width:500px;
+    height:100%;
+}
+}
